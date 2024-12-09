@@ -16,8 +16,6 @@ git clone https://github.com/Night-Raids-Reborn/vendor_xiaomi_sm6115-common.git 
 # hardware tree
 git clone https://github.com/asterixiverz/hardware_xiaomi.git --depth 1 -b thirteen-aosp hardware/xiaomi
 
-#signing keys
-git clone https://github.com/nothing-sus-2/private_keys.git -b rise vendor/lineage-priv
 # set build environment
 . build/envsetup.sh
 #Preparing device
