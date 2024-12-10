@@ -1,10 +1,8 @@
 #!/bin/bash
 
-rm -rf device/xiaomi/citrus
-rm -rf device/xiaomi/sm6115-common
+rm -rf device/xiaomi/chime
 rm -rf kernel/xiaomi/chime
-rm -rf vendor/xiaomi/citrus
-rm -rf vendor/xiaomi/sm6115-common
+rm -rf vendor/xiaomi/chime
 rm -rf hardware/xiaomi
 rm -rf vendor/xiaomi/camera
 rm -rf vendor/lineage-priv/keys
@@ -15,13 +13,11 @@ repo init -u https://github.com/DerpFest-AOSP/manifest.git -b 13
 /opt/crave/resync.sh
 # cloning DT
 # device tree
-git clone https://github.com/nothing-sus-2/device_xiaomi_citrus.git --depth 1 -b thirteen device/xiaomi/citrus
-git clone https://github.com/nothing-sus-2/device_xiaomi_sm6115-common.git  --depth 1 -b thirteen device/xiaomi/sm6115-common
+git clone https://github.com/nothing-sus-2/device_xiaomi_chime1.git --depth 1 -b 13 device/xiaomi/chime
 # kernel tree
 git clone https://github.com/nnippon99/kernel_xiaomi_chime.git --depth 1 -b viola-ksu kernel/xiaomi/chime
 # vendor tree
-git clone https://github.com/Night-Raids-Reborn/vendor_xiaomi_citrus.git --depth 1 -b thirteen vendor/xiaomi/citrus
-git clone https://github.com/Night-Raids-Reborn/vendor_xiaomi_sm6115-common.git --depth 1 -b thirteen vendor/xiaomi/sm6115-common
+git clone https://github.com/hac4us06/vendor_xiaomi_chime.git --depth 1 -b 13 vendor/xiaomi/chime
 # hardware tree
 git clone https://github.com/asterixiverz/hardware_xiaomi.git --depth 1 -b thirteen-aosp hardware/xiaomi
 
