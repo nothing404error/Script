@@ -21,9 +21,6 @@ git clone https://github.com/hac4us06/vendor_xiaomi_chime.git --depth 1 -b 13 ve
 # hardware tree
 git clone https://github.com/asterixiverz/hardware_xiaomi.git --depth 1 -b thirteen-aosp hardware/xiaomi
 
-#miui camera
-git clone https://gitlab.com/ThankYouMario/proprietary_vendor_xiaomi_camera.git --depth 1 -b uvite-sm6225 vendor/xiaomi/camera
-
 #signing
 git clone https://github.com/Rv-Trees/vendor_lineage-priv_keys.git -b orion vendor/lineage-priv/keys
 
