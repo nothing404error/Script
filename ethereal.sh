@@ -9,7 +9,7 @@ rm -rf hardware/xiaomi
 rm -rf vendor/lineage-priv/keys
 
 # Initialize ROM manifest
-repo init -u https://github.com/DerpFest-AOSP/manifest.git -b 13
+  repo init -u https://github.com/Ethereal-OS/Manifest -b A13 --git-lfs
 # repo sync
 /opt/crave/resync.sh
 # cloning DT
@@ -30,6 +30,6 @@ git clone https://github.com/Rv-Trees/vendor_lineage-priv_keys.git -b orion vend
 # set build environment
 . build/envsetup.sh
 #Preparing device
-lunch derp_citrus-user
+lunch ethreal_citrus-user
 # lunch
-mka derp
+make ethereal
