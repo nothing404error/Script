@@ -22,9 +22,9 @@ git clone https://github.com/asterixiverz/hardware_xiaomi.git --depth 1 -b thirt
 
 #signing
 git clone https://github.com/Rv-Trees/vendor_lineage-priv_keys.git -b orion vendor/lineage-priv/keys
+export PIXELAGE_BUILD="chime"
 
 #lunch
-export PIXELAGE_BUILD="chime"
-build/envsetup.sh
+source build/envsetup.sh
 lunch pixelage_chime-ap4a-userdebug
 mka bacon
