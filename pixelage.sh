@@ -17,6 +17,10 @@ git clone https://github.com/Joe7500/kernel_xiaomi_chime.git --depth 1 -b ksu ke
 # vendor tree
 git clone https://github.com/Joe7500/vendor_xiaomi_chime.git --depth 1 -b lineage-22 vendor/xiaomi/chime
 
+#extras
+rm -rf hardware/xiaomi
+git clone https://github.com/ProjectPixelage/android_hardware_xiaomi.git --depth 1 -b 15 hardware/xiaomi
+
 #signing
 git clone https://github.com/Rv-Trees/vendor_lineage-priv_keys.git -b orion vendor/lineage-priv/keys
 
