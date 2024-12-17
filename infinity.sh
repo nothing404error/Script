@@ -28,4 +28,5 @@ cd -
 
 #lunch
 . build/envsetup.sh
-brunch citrus
+lunch infinity_citrus-userdebug
+mka bacon
