@@ -8,7 +8,7 @@ rm -rf vendor/xiaomi/camera
 rm -rf vendor/lineage-priv/keys
 
 # Initialize ROM manifest
-repo init -u https://github.com/DerpFest-AOSP/manifest.git -b 13
+repo init -u https://github.com/ArrowOS-T/android_manifest.git -b arrow-13.1_ext
 # repo sync
 /opt/crave/resync.sh
 # cloning DT
@@ -27,6 +27,6 @@ git clone https://github.com/Rv-Trees/vendor_lineage-priv_keys.git -b orion vend
 # set build environment
 . build/envsetup.sh
 #Preparing device
-lunch derp_citrus-user
+lunch arrow_chime-user
 # lunch
-mka derp
+m bacon
