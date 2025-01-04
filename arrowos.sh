@@ -29,6 +29,8 @@ git clone https://github.com/nothing-sus-2/android_packages_apps_Launcher3.git -
 
 git clone https://github.com/nothing-sus-2/packages_apps_ViPER4AndroidFX.git -b v4a packages/apps/ViPER4AndroidFX
 
+git clone https://gitlab.com/ThankYouMario/proprietary_vendor_xiaomi_camera.git -b uvite-sm6225 vendor/xiaomi/camera
+
 # set build environment
 . build/envsetup.sh
 #Preparing device
