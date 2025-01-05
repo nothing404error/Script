@@ -24,6 +24,8 @@ git clone https://github.com/asterixiverz/hardware_xiaomi.git --depth 1 -b thirt
 git clone https://github.com/Rv-Trees/vendor_lineage-priv_keys.git -b orion vendor/lineage-priv/keys
 
 #misc
+rm -rf vendor/crdroid
+git clone https://github.com/nothing-sus-2/android_vendor_crdroid.git -b 13.0 vendor/crdroid
 git clone https://github.com/nothing-sus-2/packages_apps_ViPER4AndroidFX.git -b v4a packages/apps/ViPER4AndroidFX
 
 git clone https://gitlab.com/ThankYouMario/proprietary_vendor_xiaomi_camera.git -b uvite-sm6225 vendor/xiaomi/camera
