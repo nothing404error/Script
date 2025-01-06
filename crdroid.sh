@@ -1,33 +1,33 @@
 #!/bin/bash
 
-rm -rf device/xiaomi/chime
-rm -rf kernel/xiaomi/chime
-rm -rf vendor/xiaomi/chime
-rm -rf vendor/lineage-priv/keys
+rm -rf .repo/local_manifests/
 
-# Initialize ROM manifest
+
+# Rom source repo
 repo init -u https://github.com/crdroid-13-fork/android.git -b 13.0 --git-lfs
-# repo sync
+echo "=================="
+echo "Repo init success"
+echo "=================="
+
+# Clone local_manifests repository
+git clone -b main https://github.com/nothing-sus-2/local_manifests.git .repo/local_manifests
+echo "============================"
+echo "Local manifest clone success"
+echo "============================"
+
+# Sync the repositories
 /opt/crave/resync.sh
-# cloning DT
-# device tree
-git clone https://github.com/nothing-sus-2/android_device_xiaomi_chime.git --depth 1 -b 13.0 device/xiaomi/chime
-# kernel tree
-git clone https://github.com/Joe7500/kernel_xiaomi_chime.git --depth 1 -b ksu kernel/xiaomi/chime
-# vendor tree
-git clone https://github.com/Joe7500/android_vendor_xiaomi_chime.git --depth 1 -b 13.0 vendor/xiaomi/chime
-
-#signing
-git clone https://github.com/Rv-Trees/vendor_lineage-priv_keys.git -b orion vendor/lineage-priv/keys
-
-#misc
-rm -rf vendor/crdroid
-git clone https://github.com/nothing-sus-2/android_vendor_crdroid.git -b 13.0 vendor/crdroid
+echo "============================"
 
 
-# set build environment
-. build/envsetup.sh
-#Preparing device
+# Set up build environment
+source build/envsetup.sh
+echo "====== Envsetup Done ======="
+
+# Lunch
 lunch lineage_chime-user
-# lunch
-m bacon
+echo "============="
+
+
+# Build rom
+mka bacon
