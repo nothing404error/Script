@@ -4,30 +4,27 @@ rm -rf .repo/local_manifests/
 
 
 # Rom source repo
-repo init -u https://github.com/crdroid-13-fork/android.git -b 13.0 --git-lfs
+repo init -u https://github.com/crdroid-security/android.git -b 11.0 --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
 
 # Clone local_manifests repository
-git clone -b main https://github.com/nothing-sus-2/local_manifests.git .repo/local_manifests
+git clone -b crdroid7 https://github.com/nothing-sus-2/local_manifests.git .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
 
-# Sync the repositories
+# Sync
 /opt/crave/resync.sh
-echo "============================"
+echo "============="
+echo "Sync success"
+echo "============="
 
 
 # Set up build environment
 source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
-# Lunch
-lunch lineage_chime-user
-echo "============="
-
-
 # Build rom
-mka bacon
+brunch juice
