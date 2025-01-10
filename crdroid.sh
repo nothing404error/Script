@@ -9,17 +9,17 @@ echo "=================="
 echo "Repo init success"
 echo "=================="
 
-# Clone local_manifests repository
-git clone -b crdroid7 https://github.com/nothing-sus-2/local_manifests.git .repo/local_manifests
-echo "============================"
-echo "Local manifest clone success"
-echo "============================"
-
 # Sync
 /opt/crave/resync.sh
 echo "============="
 echo "Sync success"
 echo "============="
+
+# Clone local_manifests repository
+git clone -b crdroid7 https://github.com/nothing-sus-2/local_manifests.git .repo/local_manifests
+echo "============================"
+echo "Local manifest clone success"
+echo "============================"
 
 
 # Set up build environment
