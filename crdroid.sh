@@ -1,30 +1,29 @@
 #!/bin/bash
 
-rm -rf .repo/local_manifests/
+rm -rf device/xiaomi/juice
+rm -rf kernel/xiaomi/juice
+rm -rf vendor/xiaomi/juice
+rm -rf hardware/xiaomi
 
-
-# Rom source repo
+# Initialize ROM manifest
 repo init -u https://github.com/crdroid-security/android.git -b 11.0 --git-lfs
-echo "=================="
-echo "Repo init success"
-echo "=================="
-
-# Sync
+# repo sync
 /opt/crave/resync.sh
-echo "============="
-echo "Sync success"
-echo "============="
+# cloning DT
+# device tree
+git clone https://github.com/crdroidandroid/android_device_xiaomi_chime.git --depth 1 -b 11.0 device/xiaomi/juice
+# kernel tree
+git clone https://github.com/Joe7500/kernel_xiaomi_chime.git --depth 1 -b ksu kernel/xiaomi/juice
+# vendor tree
+git clone https://github.com/GtrCraft/vendor_xiaomi_juice.git --depth 1 -b 11.0 vendor/xiaomi/juice
+# hardware tree
+git clone https://github.com/crdroidandroid/android_hardware_xiaomi.git --depth 1 -b 11.0 hardware/xiaomi
 
-# Clone local_manifests repository
-git clone -b crdroid7 https://github.com/nothing-sus-2/local_manifests.git .repo/local_manifests
-echo "============================"
-echo "Local manifest clone success"
-echo "============================"
 
 
-# Set up build environment
-source build/envsetup.sh
-echo "====== Envsetup Done ======="
-
-# Build rom
+# set build environment
+. build/envsetup.sh
+#Preparing device
+lunch lineage_juice-user
+# lunch
 brunch juice
