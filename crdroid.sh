@@ -13,7 +13,7 @@ repo init -u https://github.com/crdroid-security/android.git -b 11.0 --git-lfs
 # device tree
 git clone https://github.com/crdroidandroid/android_device_xiaomi_chime.git --depth 1 -b 11.0 device/xiaomi/juice
 # kernel tree
-git clone https://github.com/Joe7500/kernel_xiaomi_chime.git --depth 1 -b ksu kernel/xiaomi/juice
+git clone https://github.com/crdroidandroid/android_kernel_xiaomi_chime.git --depth 1 -b 13.0 kernel/xiaomi/juice
 # vendor tree
 git clone https://github.com/GtrCraft/vendor_xiaomi_juice.git --depth 1 -b 11.0 vendor/xiaomi/juice
 # hardware tree
