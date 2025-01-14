@@ -19,10 +19,13 @@ git clone https://github.com/Joe7500/vendor_xiaomi_chime.git --depth 1 -b lineag
 # hardware tree
 git clone https://github.com/asterixiverz/hardware_xiaomi.git --depth 1 -b thirteen-aosp hardware/xiaomi
 
+#signing
+git clone https://github.com/Rv-Project/vendor_lineage-priv_keys.git -b orion vendor/lineage-priv/keys
+
 
 # set build environment
 . build/envsetup.sh
 #Preparing device
 mistify chime user
 # lunch
-mist sb
+mist b
