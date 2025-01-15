@@ -20,7 +20,7 @@ git clone https://github.com/Joe7500/vendor_xiaomi_chime.git --depth 1 -b lineag
 git clone https://github.com/LineageOS/android_hardware_xiaomi.git --depth 1 -b lineage-22.1 hardware/xiaomi
 
 #signing
-git clone https://github.com/Rv-Project/vendor_lineage-priv_keys.git -b orion vendor/lineage-priv/keys
+git clone https://github.com/hiratazx/vendor_lineage-priv_keys.git vendor/lineage-priv/keys
 
 
 # set build environment
