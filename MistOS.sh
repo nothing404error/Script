@@ -26,6 +26,6 @@ git clone https://github.com/asterixiverz/vendor_sign.git -b pixelage vendor/lin
 # set build environment
 . build/envsetup.sh
 #Preparing device
-mistify chime user
+mistify chime userdebug
 # lunch
 mist b
