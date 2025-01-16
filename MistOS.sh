@@ -13,7 +13,7 @@ repo init -u https://github.com/Project-Mist-OS/manifest -b 15 --git-lfs
 # device tree
 git clone https://github.com/nothing-sus-2/device_xiaomi_chime.git --depth 1 -b lineage-22.1 device/xiaomi/chime
 # kernel tree
-git clone https://github.com/Joe7500/kernel_xiaomi_chime.git --depth 1 -b ksu kernel/xiaomi/chime
+git clone https://github.com/nnippon99/kernel_xiaomi_chime.git --depth 1 -b viola-ksu kernel/xiaomi/chime
 # vendor tree
 git clone https://github.com/Joe7500/vendor_xiaomi_chime.git --depth 1 -b lineage-22 vendor/xiaomi/chime
 # hardware tree
