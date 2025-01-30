@@ -1,31 +1,25 @@
 #!/bin/bash
 
-rm -rf device/xiaomi/chime
-rm -rf kernel/xiaomi/chime
-rm -rf vendor/xiaomi/chime
-rm -rf hardware/xiaomi
-
 # Initialize ROM manifest
 repo init -u https://github.com/Project-Mist-OS/manifest -b 15 --git-lfs
 # repo sync
 /opt/crave/resync.sh
 # cloning DT
 # device tree
-git clone https://github.com/nothing-sus-2/device_xiaomi_chime.git --depth 1 -b lineage-22.1 device/xiaomi/chime
+git clone https://github.com/nothing-sus-2/device_motorola_fogos.git --depth 1 -b 15 device/motorola/fogos
+git clone https://github.com/OptoHub/device_motorola_sm6375-common.git --depth 1 -b 15 device/motorola/sm6375-common
 # kernel tree
-git clone https://github.com/nnippon99/kernel_xiaomi_chime.git --depth 1 -b viola-ksu kernel/xiaomi/chime
+git clone https://github.com/OptoHub/kernel_motorola_sm6375.git --depth 1 -b 15 kernel/motorola/sm6375
 # vendor tree
-git clone https://github.com/Joe7500/vendor_xiaomi_chime.git --depth 1 -b lineage-22 vendor/xiaomi/chime
+git clone https://github.com/OptoHub/vendor_motorola_fogos.git --depth 1 -b 14 vendor/motorola/fogos
+git clone https://github.com/OptoHub/vendor_motorola_sm6375-common.git --depth 1 -b 15 vendor/motorola/sm6375-common
 # hardware tree
-git clone https://github.com/LineageOS/android_hardware_xiaomi.git --depth 1 -b lineage-22.1 hardware/xiaomi
-
-#signing
-git clone https://github.com/asterixiverz/vendor_sign.git -b pixelage vendor/lineage-priv/keys
+git clone https://github.com/LineageOS/android_hardware_motorola.git --depth 1 -b lineage-22.1 hardware/motorola
 
 
 # set build environment
 . build/envsetup.sh
 #Preparing device
-mistify chime userdebug
+mistify fogos userdebug
 # lunch
 mist b
