@@ -14,7 +14,7 @@ git clone https://github.com/OptoHub/kernel_motorola_sm6375.git --depth 1 -b 15 
 git clone https://github.com/OptoHub/vendor_motorola_fogos.git --depth 1 -b 14 vendor/motorola/fogos
 git clone https://github.com/OptoHub/vendor_motorola_sm6375-common.git --depth 1 -b 15 vendor/motorola/sm6375-common
 # hardware tree
-git clone https://github.com/LineageOS/android_hardware_motorola.git --depth 1 -b lineage-22.1 hardware/motorola
+git clone https://github.com/vullk4n/hardware_motorola.git --depth 1 -b v-15.0 hardware/motorola
 
 
 # set build environment
