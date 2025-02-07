@@ -23,6 +23,6 @@ git clone https://github.com/LineageOS/android_system_qcom.git system/qcom
 # set build environment
 . build/envsetup.sh
 #Preparing device
-mistify fogos user
+mistify fogos userdebug
 # lunch
 mist b
