@@ -15,9 +15,6 @@ git clone https://github.com/nothing-sus-2/device_xiaomi_chime.git --depth 1 -b 
 git clone https://github.com/nnippon99/kernel_xiaomi_chime.git --depth 1 -b viola-ksu kernel/xiaomi/chime
 # vendor tree
 git clone https://github.com/nothing-sus-2/vendor_xiaomi_chime.git --depth 1 -b 13 vendor/xiaomi/chime
-#hardware tree
-rm -rf hardware/xiaomi
-git clone https://github.com/LineageOS/android_hardware_xiaomi.git -b lineage-20 hardware/xiaomi
 
 #misc
 rm -rf packages/apps/DerpLauncher
