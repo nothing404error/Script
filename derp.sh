@@ -12,7 +12,7 @@ repo init -u https://github.com/DerpFest-AOSP/manifest.git -b 13
 # device tree
 git clone https://github.com/nothing-sus-2/device_xiaomi_chime.git --depth 1 -b 13_test device/xiaomi/chime
 # kernel tree
-git clone https://github.com/nnippon99/kernel_xiaomi_chime.git --depth 1 -b viola-ksu kernel/xiaomi/chime
+git clone https://github.com/hac4us06/Kernel-xiaomi-chime-grass.git --depth 1 -b grass-ksu kernel/xiaomi/chime
 # vendor tree
 git clone https://github.com/nothing-sus-2/vendor_xiaomi_chime.git --depth 1 -b 13 vendor/xiaomi/chime
 
