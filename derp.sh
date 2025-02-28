@@ -22,6 +22,8 @@ git clone https://github.com/LineageOS/android_hardware_xiaomi.git -b lineage-20
 #misc
 rm -rf packages/apps/DerpLauncher
 git clone https://github.com/nothing-sus-2/packages_apps_DerpLauncher.git -b 13 packages/apps/DerpLauncher
+rm -rf frameworks/base
+git clone https://github.com/GhostMaster69-dev/frameworks_base.git -b 13 frameworks/base
 
 # set build environment
 . build/envsetup.sh
