@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Initialize ROM manifest
-repo init -u https://github.com/AxionAOSP/android.git -b lineage-22.1 --git-lfs
+repo init -u https://github.com/crdroidandroid/android.git -b 15.0 --git-lfs
 # repo sync
 /opt/crave/resync.sh
 # cloning DT
@@ -11,9 +11,6 @@ git clone https://github.com/nothing-sus-2/device_xiaomi_chime.git --depth 1 -b 
 git clone https://github.com/Joe7500/kernel_xiaomi_chime.git --depth 1 -b main kernel/xiaomi/chime
 # vendor tree
 git clone https://github.com/Joe7500/vendor_xiaomi_chime.git --depth 1 -b lineage-22 vendor/xiaomi/chime
-# hardware tree
-rm -rf hardware/xiaomi
-git clone https://github.com/LineageOS/android_hardware_xiaomi.git --depth 1 -b lineage-22.1 hardware/xiaomi
 
 
 # set build environment
