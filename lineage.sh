@@ -1,6 +1,6 @@
 # set build environment
 . build/envsetup.sh
 #Preparing device
-lunch derp_citrus-userdebug
+lunch lineage_chime-userdebug
 # lunch
-mka derp
+m bacon
