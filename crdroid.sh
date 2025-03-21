@@ -1,6 +1,6 @@
 # set build environment
 . build/envsetup.sh
 #Preparing device
-lunch lineage_juice-userdebug
+lunch corvus_juice-userdebug
 # lunch
-brunch juice
+make corvus
