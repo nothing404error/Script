@@ -1,6 +1,6 @@
 # set build environment
 . build/envsetup.sh
 #Preparing device
-lunch corvus_juice-userdebug
+lunch aosp_citrus-user
 # lunch
-make corvus
+mka bacon
