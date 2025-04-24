@@ -6,7 +6,7 @@ repo init -u https://github.com/Arrow-OS-Extended/android_manifest.git -b arrow-
 /opt/crave/resync.sh
 # cloning DT
 # device tree
-git clone https://github.com/nothing-sus-2/device_xiaomi_chime.git --depth 1 -b Test device/xiaomi/chime
+git clone https://github.com/nothing-sus-2/device_xiaomi_chime.git --depth 1 -b ArrowOS device/xiaomi/chime
 # kernel tree
 git clone https://github.com/nnippon99/kernel_xiaomi_chime.git --depth 1 -b viola kernel/xiaomi/chime
 # vendor tree
