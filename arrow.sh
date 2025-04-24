@@ -14,12 +14,15 @@ git clone https://github.com/nothing-sus-2/vendor_xiaomi_chime.git --depth 1 ven
 #misc
 rm -rf vendor/arrow
 git clone https://github.com/nothing-sus-2/android_vendor_arrow.git --depth 1 vendor/arrow
+rm -rf device/qcom/sepolicy_vndr
+git clone https://github.com/nothing-sus-2/android_device_qcom_sepolicy_vndr.git device/qcom/sepolicy_vndr
+
 #hardware tree
 git clone https://github.com/asterixiverz/hardware_xiaomi.git --depth 1 hardware/xiaomi
 
 # set build environment
 . build/envsetup.sh
 #Preparing device
-lunch arrow_chime-userdebug
+lunch arrow_chime-user
 # lunch
 m bacon
