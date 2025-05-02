@@ -1,3 +1,5 @@
+rm -rf packages/apps/Updater
+git clone https://github.com/nothing-sus-2/android_packages_apps_Updater.git -b 13.0 packages/apps/Updater
 # set build environment
 . build/envsetup.sh
 #Preparing device
