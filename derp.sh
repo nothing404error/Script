@@ -19,5 +19,7 @@ git clone https://github.com/LineageOS/android_hardware_xiaomi.git --depth 1 -b 
 
 # set build environment
 . build/envsetup.sh
+#Preparing device
+lunch lineage_citrus-userdebug
 # lunch
-derpfest citrus
+mka bacon
