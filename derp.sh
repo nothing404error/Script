@@ -26,4 +26,4 @@ git clone https://github.com/LineageOS/android_hardware_xiaomi.git --depth 1 -b 
 #Preparing device
 lunch lineage_chime-bp1a-userdebug
 # lunch
-mka bacon
+mka derp
