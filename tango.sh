@@ -1,6 +1,8 @@
+rm -rf packages/apps/DerpLauncher
+git clone https://github.com/nothing-sus-2/packages_apps_DerpLauncher.git -b 13 packages/apps/DerpLauncher
 # set build environment
-source build/envsetup.sh
+. build/envsetup.sh
 #Preparing device
-lunch genesis_citrus-bp1a-userdebug
+lunch derp_chime-user
 # lunch
-mka genesis
+mka derp
