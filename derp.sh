@@ -1,30 +1,24 @@
 #!/bin/bash
 
-rm -rf device/xiaomi/chime
-rm -rf vendor/xiaomi/chime
-rm -rf vendor/xiaomi/citrus
-rm -rf vendor/xiaomi/lime
-rm -rf kernel/xiaomi/chime
-
 # Initialize ROM manifest
-repo init -u https://github.com/DerpFest-LOS/android_manifest.git -b 15.2 --git-lfs
+repo init -u https://github.com/DerpFest-AOSP/manifest.git -b 13
 # repo sync
 /opt/crave/resync.sh
 # cloning DT
 # device tree
-git clone https://github.com/nothing-sus-2/device_xiaomi_chime.git --depth 1 -b derp device/xiaomi/chime
+git clone https://github.com/nothing-sus-2/device_xiaomi_citrus.git --depth 1 device/xiaomi/citrus
+git clone https://github.com/nothing-sus-2/device_xiaomi_sm6115-common.git device/xiaomi/sm6115-common
 # kernel tree
-git clone https://github.com/Joe7500/kernel_xiaomi_chime.git --depth 1 -b ksu kernel/xiaomi/chime
+git clone https://github.com/greenforce-project/kernel_xiaomi_citrus_sm6115.git --depth 1 kernel/xiaomi/sm6115
 # vendor tree
-git clone https://github.com/Joe7500/vendor_xiaomi_chime.git --depth 1 -b lineage-22.2 vendor/xiaomi/chime
+git clone https://github.com/nothing-sus-2/vendor_xiaomi_sm6115-common.git --depth 1 vendor/xiaomi/sm6115-common
 
-git clone https://github.com/hiratazx/vendor_lineage-priv_keys.git vendor/lineage-priv/keys
+git clone https://github.com/Night-Raids-Reborn/vendor_xiaomi_citrus.git vendor/xiaomi/citrus
 #hardware tree
-git clone https://github.com/LineageOS/android_hardware_xiaomi.git --depth 1 -b lineage-22.2 hardware/xiaomi
 
 # set build environment
 . build/envsetup.sh
 #Preparing device
-lunch lineage_chime-bp1a-userdebug
+lunch derp_citrus-user
 # lunch
 mka derp
