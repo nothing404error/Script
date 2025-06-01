@@ -1,11 +1,8 @@
-rm -rf packages/apps/DerpLauncher
-git clone https://github.com/nothing-sus-2/packages_apps_DerpLauncher.git -b 13 packages/apps/DerpLauncher
-#misc
-rm -rf packages/resources/devicesettings
-git clone https://github.com/PixelExperience/packages_resources_devicesettings.git -b thirteen packages/resources/devicesettings
+rm -rf device/xiaomi/chime
+git clone https://github.com/nothing-sus-2/android_device_xiaomi_chime.git -b test device/xiaomi/chime
 # set build environment
 . build/envsetup.sh
 #Preparing device
-lunch derp_citrus-user
+lunch lineage_chime-user
 # lunch
-mka derp
+m bacon
