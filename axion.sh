@@ -17,7 +17,7 @@ git clone https://github.com/nnippon99/kernel_xiaomi_chime.git -b viola-ksu --de
  
 # Set up build environment
 source build/envsetup.sh
-echo "====== Envsetup Done ======="
+
 
 #sign build 
 gk -s
