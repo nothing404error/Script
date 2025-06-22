@@ -10,8 +10,8 @@ repo init -u https://github.com/AxionAOSP/android.git -b lineage-22.2 --git-lfs
 /opt/crave/resync.sh
 
 # Clone Device trees
- git clone https://github.com/nothing-sus-2/device_xiaomi_chime.git -b axion --depth 1 device/xiaomi/chime
-git clone https://github.com/Joe7500/vendor_xiaomi_chime.git --depth 1 -b lineage-22.2 vendor/xiaomi/chime
+git clone https://github.com/nothing-sus-2/device_xiaomi_chime.git -b axion --depth 1 device/xiaomi/chime
+git clone https://github.com/Joe7500/vendor_xiaomi_chime.git -b lineage-22.2 --depth 1 vendor/xiaomi/chime
 git clone https://github.com/nnippon99/kernel_xiaomi_chime.git -b viola-ksu --depth 1 kernel/xiaomi/chime
 
  
