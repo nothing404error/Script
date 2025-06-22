@@ -12,20 +12,16 @@ repo init -u https://github.com/AxionAOSP/android.git -b lineage-22.2 --git-lfs
 # Clone Device trees
 git clone https://github.com/nothing-sus-2/device_xiaomi_chime.git -b axion --depth 1 device/xiaomi/chime
 git clone https://github.com/Joe7500/vendor_xiaomi_chime.git -b lineage-22.2 --depth 1 vendor/xiaomi/chime
-git clone https://github.com/nnippon99/kernel_xiaomi_chime.git -b viola-ksu --depth 1 kernel/xiaomi/chime
-
+git clone https://github.com/nnippon99/kernel_xiaomi_chime.git -b viola --depth 1 kernel/xiaomi/chime
+echo 'CONFIG_SCHED_DEBUG=y' >> kernel/xiaomi/chime/arch/arm64/configs/vendor/xiaomi/bengal_defconfig
  
 # Set up build environment
 source build/envsetup.sh
 
-
-#sign build 
-gk -s
-
 # Lunch
-axion chime userdebug va
+axion chime user vannila
 
 
 # Build rom
-ax -br
+ax -b user
 
