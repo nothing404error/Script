@@ -14,6 +14,9 @@ git clone https://github.com/nothing-sus-2/device_xiaomi_chime.git -b axion --de
 git clone https://github.com/Joe7500/vendor_xiaomi_chime.git -b lineage-22.2 --depth 1 vendor/xiaomi/chime
 git clone https://github.com/nnippon99/kernel_xiaomi_chime.git -b viola --depth 1 kernel/xiaomi/chime
 echo 'CONFIG_SCHED_DEBUG=y' >> kernel/xiaomi/chime/arch/arm64/configs/vendor/xiaomi/bengal_defconfig
+
+#Hardware trees
+git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-22.2 hardware/xiaomi
  
 # Set up build environment
 source build/envsetup.sh
