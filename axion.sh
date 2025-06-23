@@ -19,7 +19,7 @@ echo 'CONFIG_SCHED_DEBUG=y' >> kernel/xiaomi/chime/arch/arm64/configs/vendor/xia
 source build/envsetup.sh
 
 # Lunch
-axion chime user vannila
+axion chime user vanilla
 
 
 # Build rom
