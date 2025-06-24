@@ -4,4 +4,4 @@
 #Preparing device
 lunch arrow_chime-user
 # lunch
-mka bacon
+m bacon
