@@ -1,6 +1,6 @@
 # Set up build environment
-source build/envsetup.sh
+. build/envsetup.sh
 # Lunch
-axion chime user vanilla
+lunch lineage_chime-user
 # Build rom
-ax -b user
+m bacon
