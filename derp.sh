@@ -1,6 +1,6 @@
 # Set up build environment
 . build/envsetup.sh
 # Lunch
-lunch superior_chime-user
+lunch lineage_chime-bp2a-userdebug
 # Build rom
-m bacon
+mka derp
