@@ -1,6 +1,6 @@
 # Set up build environment
 . build/envsetup.sh
 # Lunch
-lunch lineage_chime-bp2a-userdebug
+lunch derp_citrus-user
 # Build rom
 mka derp
