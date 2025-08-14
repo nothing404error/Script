@@ -1,5 +1,5 @@
 #Hardware trees
-git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-22.2 hardware/xiaomi
+git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-23.0 hardware/xiaomi
 
 # Set up build environment
 . b*/env*
