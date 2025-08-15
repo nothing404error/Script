@@ -7,6 +7,10 @@ repo init -u https://github.com/Lunaris-AOSP/android -b 16 --git-lfs
 #Hardware trees
 git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-23.0 hardware/xiaomi
 
+#Misc
+rm -rf packages/apps/Settings
+git clone https://github.com/nothing404error/packages_apps_Settings.git packages/apps/Settings
+
 # Set up build environment
 . b*/env*
 # Lunch
