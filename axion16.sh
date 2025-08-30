@@ -7,7 +7,7 @@ repo init -u https://github.com/AxionAOSP/android.git -b lineage-23.0 --git-lfs
 source build/envsetup.sh
 source build/envsetup.sh
 # Lunch
-axion chime user gms pico
+axion chime user va
 mka installclean
 # Build rom
 ax -b user
