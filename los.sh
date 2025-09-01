@@ -5,4 +5,4 @@
 lunch lineage_chime-user
 
 # Build rom
-m bacon
+mka bacon
