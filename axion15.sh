@@ -1,6 +1,3 @@
-
-# Sync the repositories
-/opt/crave/resync.sh
 # Set up build environment
 source build/envsetup.sh
 source build/envsetup.sh
