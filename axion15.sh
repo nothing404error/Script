@@ -2,7 +2,7 @@
 source build/envsetup.sh
 source build/envsetup.sh
 # Lunch
-axion chime user gms pico
+axion citrus user gms pico
 mka installclean
 # Build rom
 ax -b user
