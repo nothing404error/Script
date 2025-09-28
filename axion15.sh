@@ -1,3 +1,4 @@
+rm -rf packages/apps/Trebuchet
 rm -rf packages/apps/Launcher3
 git clone https://github.com/nothing404error/android_packages_apps_Launcher3.git -b lineage-22.2 packages/apps/Launcher3
 # Set up build environment
