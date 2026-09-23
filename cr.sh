@@ -2,7 +2,7 @@
 . build/envsetup.sh
 
 # Lunch
-lunch lineage_chime-userdebug
+lunch lineage_chime-user
 
 # Build rom
 m bacon
